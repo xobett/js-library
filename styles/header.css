@@ -1,0 +1,11 @@
+.header{
+    background: var(--sea-salt-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 1.6rem;
+
+    text-align: center;
+}

@@ -1,6 +1,5 @@
 const library = [];
 
-console.log('test')
 seedBookData();
 
 function addBookToLibrary(author, title, pages, isRead){
