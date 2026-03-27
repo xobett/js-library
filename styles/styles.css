@@ -16,5 +16,5 @@ body{
 .grid-container{
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 7fr 1fr;
+    grid-template-rows: minmax(0, 1fr) minmax(0, 7fr) minmax(0, 1fr);
 }

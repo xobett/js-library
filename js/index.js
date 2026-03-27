@@ -1,32 +1,37 @@
-const library = [];
+import { addBook, getAllBooks } from "./Service/service.js";
 
-seedBookData();
+// const library = [];
+// const form = document.getElementById('form');
 
-function addBookToLibrary(author, title, pages, isRead){
-    try {
-    } catch (error) {
-        console.log(error);        
+// form.addEventListener('submit', function(){
+//     const data = new FormData(form);
+
+//     const [success, message] = addBook(data);
+// })
+
+test();
+
+function test(){
+    const data = {
+        author: 'Creed',
+        title: 'Apollo Creed IV',
+        pages: 122,
+        isRead: true,
     }
 
-    library.push(book);
-}
-
-function Book(author, title, pages, isRead = false){
-    if (!new.target){
-        throw new Error('Target not defined');
+    const data2 = {
+        author: 'Creed',
+        title: 'Apollo Creed III',
+        pages: 122,
+        isRead: true,
     }
-    this.id = crypto.randomUUID();
-    this.author = String(author).trim();
-    this.title = String(title).trim();
-    this.pages = parseInt(pages);
-    this.isRead = Boolean(isRead);
-}
 
-function seedBookData(){
-    const pragmaticDeveloper = new Book("Uncle Bob", "Pragmatic Developer", 200, true);
-    const gameDesign = new Book("Uncle Bob", "Game Design", 400, false);
-    const dataAlgorithms = new Book("Uncle Bob", "Data Algorithms", 300, false);
-    const gameProgramming = new Book("Uncle Bob", "Game Programming", 100, true);
+    addBook(data);
+    addBook(data2);
+    addBook(data2);
+    addBook(data2);
+    addBook(data2);
+    addBook(data2);
 
-    library.push(pragmaticDeveloper, gameDesign, dataAlgorithms, gameProgramming);
+    console.log(getAllBooks());
 }
