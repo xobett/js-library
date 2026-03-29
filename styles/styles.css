@@ -1,5 +1,5 @@
-@import './reset.css';
 @import './variables.css';
+@import './reset.css';
 @import './header.css';
 @import './content.css';
 @import './footer.css';
@@ -16,5 +16,5 @@ body{
 .grid-container{
     height: 100vh;
     display: grid;
-    grid-template-rows: minmax(0, 1fr) minmax(0, 7fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 7fr);
 }

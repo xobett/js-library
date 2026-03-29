@@ -16,13 +16,30 @@
             <div class="add-container">
                 <div id="show-modal-btn" class="btn">Add book</div>
             </div>
-            <div>
+            <div class="library-container">
+                <div class="book">
+                    <div class="info-container">
+                        <div class="title">Title</div>
+                    </div>
+                    <div class="description-container">
+                        <div class="author">Written by:</div>
+                        <div class="pages">### pages</div>
+                    </div>
+                    <div class="actions-container">
+                        <div class="is-read">
+                            <label for="is-read">Read</label>
+                            <input id="is-read" type="checkbox" name="is-read" checked>
+                        </div>
+                        <div class="btn btn-danger">
+                            Delete
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="footer"></div>
     </div>
     
-    <dialog id="modal" >
+    <dialog id="modal" closedby="any">
         <form>
             <div class="field-container">
                 <input type="text" id="author" name="author" placeholder="" required>
@@ -37,11 +54,14 @@
                 <label for="pages">Pages</label>
             </div>
             <div class="field-container">
-                <label for="isRead">Is read</label>
+                <label for="isRead"><b>Have you read this book?</b></label>
                 <input type="checkbox" id="isRead" name="isRead" required>
             </div>
         </form>
-    <div id="close-modal-btn" class="btn">Close</div>
+    <div class="btns-container">
+        <div id="close-modal-btn" class="btn">Close</div>
+        <button class="btn" type="submit">Submit</button>
+    </div>
     </dialog>
 </body>
 </html>
