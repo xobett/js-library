@@ -84,6 +84,17 @@ dialog:open::backdrop{
     }
 }
 
+dialog[id="message-modal"]{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+} 
+
+dialog[id="message-modal"] .result{
+    font-weight: bold;
+}
+
 /* DIALOG */
 
 input{
