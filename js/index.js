@@ -1,21 +1,18 @@
 import { addBook, getAllBooks } from "./Service/service.js";
+const modal = document.getElementById('modal');
 
-// const library = [];
-// const form = document.getElementById('form');
-
-// form.addEventListener('submit', function(){
-//     const data = new FormData(form);
-
-//     const [success, message] = addBook(data);
-// })
-
-test();
+document.getElementById('show-modal-btn').addEventListener('click', function(e) {
+    modal.showModal();
+});
+document.getElementById('close-modal-btn').addEventListener('click', function(e) {
+    modal.close();
+});
 
 function test(){
     const data = {
         author: 'Creed',
         title: 'Apollo Creed IV',
-        pages: 122,
+        pages: 100,
         isRead: true,
     }
 
@@ -26,12 +23,8 @@ function test(){
         isRead: true,
     }
 
-    addBook(data);
-    addBook(data2);
-    addBook(data2);
-    addBook(data2);
-    addBook(data2);
-    addBook(data2);
+    const success = addBook(data);
+    console.log(success)
 
     console.log(getAllBooks());
 }

@@ -1,5 +1,7 @@
 .header{
-    background: var(--sea-salt-gradient);
+    user-select: none;
+
+    background: var(--grdnt-sea-salt);
     display: flex;
     justify-content: center;
     align-items: center;

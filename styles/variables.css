@@ -1,5 +1,11 @@
 :root{
-    --sea-salt-gradient: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-    --zinc-gradient: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
-    --blue: #4b6cb7;
+    --grdnt-sea-salt: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    --grdnt-zinc: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+    
+    --clr-primary: #18ffff;
+    --clr-primary-light: #adffff;
+    --clr-bg: #19214d;
+    --clr-blue: #5353ff;
+
+    --radius: 0.5rem;
 }

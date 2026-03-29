@@ -14,10 +14,34 @@
         </div>
         <div class="content">
             <div class="add-container">
-                <div class="btn">&plus;</div>
+                <div id="show-modal-btn" class="btn">Add book</div>
+            </div>
+            <div>
             </div>
         </div>
         <div class="footer"></div>
     </div>
+    
+    <dialog id="modal" >
+        <form>
+            <div class="field-container">
+                <input type="text" id="author" name="author" placeholder="" required>
+                <label for="author">Author</label>
+            </div>
+            <div class="field-container">
+                <input type="text" id="title" name="title" placeholder="" required>
+                <label for="title">Title</label>
+            </div>
+            <div class="field-container">
+                <input type="number" min="1" id="pages" name="pages" placeholder="" required>
+                <label for="pages">Pages</label>
+            </div>
+            <div class="field-container">
+                <label for="isRead">Is read</label>
+                <input type="checkbox" id="isRead" name="isRead" required>
+            </div>
+        </form>
+    <div id="close-modal-btn" class="btn">Close</div>
+    </dialog>
 </body>
 </html>
